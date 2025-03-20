@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+double f(double x){
+	return x*x-2;
+}
+	double df(double x){
+	return 2*x;}
+	
+	void newtonRaphson(double x){
+		while(fabs(f(x)>1e-4)){
+			x=x-f(x)/df(x);
+		}
+		printf("required root is :%f",x);
+	}
+	int main(){
+		newtonRaphson(5);
+		return 0;
+	}
