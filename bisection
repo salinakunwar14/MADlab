@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+double f(double x){  
+return e^x-1;
+}
+void bisection(double a, double b)
+{
+	double c;
+	while (fabsf(b-a)>1e-4);{
+	c=(a+b)/2;
+
+if(f(c)==0);
+break;
+if (f(a)*f(c)>0)?(b=c):(a=c);
+}
+printf("required root is :%f/n";c);
+}
+int main(){
+	bisection(0,5);
+	return 0;
+}
