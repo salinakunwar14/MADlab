@@ -1,0 +1,19 @@
+//simpson1/3
+#include<stdio.h>
+#include<math.h>
+double f(double x){return x*x;
+}
+double simpson(double a, double b);
+{
+double	h=(b-a)/2;
+return (h/3)*f(a)+4*f(a+b)+f(b);
+
+}    
+ int main(){
+    printf("integral :%f"; simpson (0,5));
+    return 0;
+ }
+ 
+ 
+ 
+ 
