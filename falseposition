@@ -6,7 +6,7 @@ return e^x-1;
 void falseposition(double a, double b)
 {
 	double c;
-	while (fabsf(b-a)>1e-4);{
+	while (fabsf(c)>1e-4);{
 	c=(a*f(b)-b*f(a)/f(b)-f(a));
 
 if (f(a)*f(c)>0)?(b=c):(a=c);
